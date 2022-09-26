@@ -1,0 +1,27 @@
+/*To make a big gif for the list: https://stackoverflow.com/questions/7775594/css-list-style-image-size*/
+/*So that background-immage url works: https://coder-coder.com/how-to-fix-css-background-image-not-working/*/
+li {
+  background-image: url(../images/sushi.gif);
+  margin: 0;
+  padding: 36px 0 36px 84px;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 40px;
+}
+h1 {
+  font-family: "Gill Sans", sans-serif;
+  color: navy;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12pt;
+  text-indent: 20px;
+  line-height: 1.5em;
+}
+/*To cover the whole page: https://css-tricks.com/perfect-full-page-background-image/*/
+body{
+  background-image: url(../images/paper.jpg);
+  background-size: cover;
+}
