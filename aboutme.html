@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <style>
+      .h1 {
+        grid-area: heading;
+      }
+
+      .photo {
+        grid-area: photo;
+      }
+
+      .desc1 {
+        grid-area: desc1;
+      }
+
+      .desc {
+        grid-area: desc;
+      }
+
+      .contact {
+        grid-area: contact;
+      }
+
+      .gridcontainer {
+        display: grid;
+        grid-template-areas:
+          "photo desc1"
+          "desc desc"
+          "contact contact";
+        grid-template-columns: 40% 60%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .dataitem {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .makan {
+        font-weight: bold;
+      }
+
+      p {
+        font-size: x-large;
+        text-align: justify;
+        font-family: "Times New Roman", Times, serif;
+        word-spacing: 5px;
+        line-height: 40px;
+      }
+
+      img {
+        width: 60%;
+      }
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>About Me</h1>
+    <div class="gridcontainer">
+      <div class="photo dataitem">
+        <img src="images/aboutme.JPG" alt="Photo of Me" title="Photo of Me" />
+      </div>
+      <div class="desc1 dataitem">
+        <p>
+          Hello everyone! My name is Dylan Hugo Sajino and welcome to my food
+          blog! I am an avid eater and thus what better way to eat good food
+          than cooking your own! My love for cooking started when I wanted to
+          lose more weight. I realised that a lot of so called "diet food" is
+          very bland and I thought that it would never be sustainable for me to
+          keep eating "diet food" to lose weight and achieve my fitness goals.
+          That is when I thought of cooking my own food so that I can control I
+          can track my calories and macronutrients intake through my own cooked
+          food.
+          <br />
+          Makan bareng means to eat together in Indonesian. In this blog, I will
+          be uploading my own simple recipes that have saved me when I dont have
+          much time to cook and even more complicated recipes that require more
+          time to show off your friends/family that you can cook. If you are a
+          college student who wants simple recipes to cook with your limited
+          time or someone who is looking for recipes to spice up their cooking,
+          you have come to the right place.
+          <br />
+          <br />
+          Have fun and <span class="makan">"mari kita makan bareng".</span>
+        </p>
+      </div>
+      <div class="comments"></div>
+      
+    </div>
+  </body>
+</html>
