@@ -5,68 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
-    <style>
-      .h1 {
-        grid-area: heading;
-      }
-
-      .photo {
-        grid-area: photo;
-      }
-
-      .desc1 {
-        grid-area: desc1;
-      }
-
-      .desc {
-        grid-area: desc;
-      }
-
-      .contact {
-        grid-area: contact;
-      }
-
-      .gridcontainer {
-        display: grid;
-        grid-template-areas:
-          "photo desc1"
-          "desc desc"
-          "contact contact";
-        grid-template-columns: 40% 60%;
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .dataitem {
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .makan {
-        font-weight: bold;
-      }
-
-      p {
-        font-size: x-large;
-        text-align: justify;
-        font-family: "Times New Roman", Times, serif;
-        word-spacing: 5px;
-        line-height: 40px;
-      }
-
-      img {
-        width: 60%;
-      }
-
-      h1 {
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/aboutme.css">
   </head>
   <body>
+    <div>
+      <div>
+        <ul class="navbar">
+          <li class="horizontal">
+            <a href="index.html" class="hover">HOME</a>
+          </li>
+          <li class="horizontal">
+            <a href="recipes.html" class="hover">RECIPES</a>
+          </li>
+          <li class="horizontal">
+            <a href="aboutme.html" class="hover">ABOUT</a>
+          </li>
+          <li class="horizontal">
+            <a href="contact-us.html" class="hover">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <h1>About Me</h1>
     <div class="gridcontainer">
       <div class="photo dataitem">
@@ -96,8 +55,6 @@
           Have fun and <span class="makan">"mari kita makan bareng".</span>
         </p>
       </div>
-      <div class="comments"></div>
-      
     </div>
   </body>
 </html>

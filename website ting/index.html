@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <ul class="navbar">
+          <li class="horizontal">
+            <a href="index.html" class="hover">HOME</a>
+          </li>
+          <li class="horizontal">
+            <a href="recipes.html" class="hover">RECIPES</a>
+          </li>
+          <li class="horizontal">
+            <a href="aboutme.html" class="hover">ABOUT</a>
+          </li>
+          <li class="horizontal">
+            <a href="contact-us.html" class="hover">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="images/background2.jpg"
+          alt="sushi"
+          title="sushi"
+          style="width: 100%"
+        />
+        <div class="text">"MAKAN BARENG"</div>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img
+            src="images/background3.jpg"
+            alt="tacos"
+            title="tacos"
+            style="width: 100%"
+          />
+          <div class="text">"MAKAN BARENG"</div>
+        </div>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img
+              src="images/background4.jpg"
+              alt="burgers"
+              title="burgers"
+              style="width: 100%"
+            />
+            <div class="text">"MAKAN BARENG"</div>
+          </div>
+        </div>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides(){
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {slideIndex = 1}
+
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 5000);
+      }
+      slideIndex
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitemap</title>
+    <style>
+      .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: blanchedalmond;
+        overflow: hidden;
+      }
+
+      .horizontal {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: #ffc739;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #e9f495;
+      }
+
+      .list1 {
+        grid-area: list1;
+      }
+
+      .list2 {
+        grid-area: list2;
+      }
+
+      .gridcontainer {
+        display: grid;
+        grid-template-areas: "list1 list2";
+        grid-template-columns: 50% 50%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <ul class="navbar">
+          <li class="horizontal">
+            <a href="index.html" class="hover">HOME</a>
+          </li>
+          <li class="horizontal">
+            <a href="recipes.html" class="hover">RECIPES</a>
+          </li>
+          <li class="horizontal">
+            <a href="aboutme.html" class="hover">ABOUT</a>
+          </li>
+          <li class="horizontal">
+            <a href="contact-us.html" class="hover">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="gridcontainer">
+      <div class="list1">
+        <p>Pages</p>
+        <ul>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+      </div>
+      <div class="list2">
+        <p>Recipes</p>
+        <ul>
+          <li><a href="gyudon.html">Gyudon</a></li>
+          <li><a href="bolognese.html">Spaghetti Bolognese</a></li>
+          <li><a href="chirashidon.html">Chirashi Don</a></li>
+          <li><a href="crispy-rice.html">Salmon Crispy Rice</a></li>
+          <li><a href="indomie.html">Indomie Goreng</a></li>
+          <li><a href="nasigoreng.html">Nasi Goreng</a></li>
+          <li><a href="nigiri.html">Nigiri</a></li>
+          <li><a href="oyakodon.html">Oyako don</a></li>
+          <li><a href="steak.html">Steak</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

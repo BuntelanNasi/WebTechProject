@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyudon</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: blanchedalmond;
+        overflow: hidden;
+      }
+
+      .horizontal {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: #ffc739;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #e9f495;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      .dataitem {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .photo {
+        grid-area: photo;
+      }
+
+      .desc {
+        grid-area: desc;
+      }
+
+      .desc1 {
+        grid-area: desc1;
+      }
+
+      .gridcontainer {
+        display: grid;
+        grid-template-areas:
+          "photo desc1"
+          "desc desc";
+        grid-template-columns: 40% 60%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .tips {
+        font-size: large;
+        text-align: justify;
+        font-family: "Times New Roman", Times, serif;
+        word-spacing: 5px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <ul class="navbar">
+          <li class="horizontal">
+            <a href="index.html" class="hover">HOME</a>
+          </li>
+          <li class="horizontal">
+            <a href="recipes.html" class="hover">RECIPES</a>
+          </li>
+          <li class="horizontal">
+            <a href="aboutme.html" class="hover">ABOUT</a>
+          </li>
+          <li class="horizontal">
+            <a href="contact-us.html" class="hover">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h1>Gyudon</h1>
+    <div class="gridcontainer">
+      <div class="photo dataitem">
+        <img src="images1/gyudon.jpg" alt="gyudon" title="gyudon" />
+      </div>
+      <div class="desc1 dataitem">
+        <h2>Ingredients:</h2>
+        <ul class="tips">
+          <li>
+            Thinly sliced beef: For this recipe, I recommend chuck or rib eye.
+            The paper-thin slices are essential for achieving authentic gyudon
+            (too thick, and your beef will be chewy), and you can often find
+            packages of thin-cut beef at Japanese or Asian supermarkets.
+            Alternatively, you can always slice your own.
+          </li>
+          <li>
+            Onion: Sliced onions give sweetness to the dish and are a perfect
+            pair with tender beef.
+          </li>
+          <li>
+            Sauce: The sauce is a complementary balance of sweet and savory,
+            made with dashi (Japanese soup stock), sake, mirin, soy sauce, and
+            sugar. So simple and highly effective in creating robust flavor!
+          </li>
+          <li>
+            Garnish: green onions for the color and shichimi togarashi for a
+            spicy kick.
+          </li>
+        </ul>
+        <ol class="tips">
+          <li>Cut the onion, green onions, and beef.</li>
+          <li>
+            Put the sauce ingredients, sliced onions, and beef in a large frying
+            pan and start cooking.
+          </li>
+          <li>
+            Serve the simmered beef and onion over steamed rice in large bowls.
+          </li>
+        </ol>
+      </div>
+      <div class="desc dataitem">
+        <ul class="tips">
+          <h2>Tips</h2>
+          <li>
+            Thinly slice the onion so it will become tender and sweeter quickly.
+            When the onion is cooked, it imparts a natural sweetness to the
+            dish.
+          </li>
+          <li>
+            Use good quality beef. Well-marbled beef will never become chewy
+            after being simmered in the sauce. I highly recommend ribeye for
+            gyudon. It's also easy to thinly slice your own meat. For
+            well-marbled beef, it's easier to flash freeze and cut the
+            semi-frozen meat.
+          </li>
+          <li>
+            Make extra dashi (Japanese soup stock) so you can use it for gyudon
+            and miso soup to go with the meal. I recommend making dashi either
+            from scratch or with a dashi packet.
+          </li>
+          <li>
+            Cook more rice than usual. Rice bowl dishes (or what we call
+            “donburi”) typically serve more rice per person to go with the food
+            on top of the rice. Therefore, prepare a little bit more than usual.
+            I always make 1½ rice cooker cups for two servings and 3 rice cooker
+            cups for four servings. Don't overcook the beef, especially if your
+            meat is not well-marbled. You don't want chewy meat. As soon as the
+            beef is no longer pink, you should stop cooking. If your meat is
+            well-marbled, you can let it simmer slightly longer so the meat
+            absorbs more flavors from the sauce.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

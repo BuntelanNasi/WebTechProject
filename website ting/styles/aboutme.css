@@ -1,0 +1,72 @@
+.photo {
+  grid-area: photo;
+}
+
+.desc1 {
+  grid-area: desc1;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-areas:
+    "photo desc1";
+  grid-template-columns: 40% 60%;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dataitem {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.makan {
+  font-weight: bold;
+}
+
+p {
+  font-size: x-large;
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  word-spacing: 5px;
+  line-height: 40px;
+}
+
+img {
+  width: 60%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.center{
+  text-align: center;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: blanchedalmond;
+  overflow: hidden;
+}
+
+.horizontal {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #ffc739;
+  text-align: center;
+  padding: 16px 14px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #e9f495;
+}
