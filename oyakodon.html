@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyudon</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: blanchedalmond;
+        overflow: hidden;
+      }
+
+      .horizontal {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: #ffc739;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #e9f495;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      .dataitem {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .photo {
+        grid-area: photo;
+      }
+
+      .desc {
+        grid-area: desc;
+      }
+
+      .desc1 {
+        grid-area: desc1;
+      }
+
+      .gridcontainer {
+        display: grid;
+        grid-template-areas:
+          "photo desc1"
+          "desc desc";
+        grid-template-columns: 40% 60%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .tips {
+        font-size: large;
+        text-align: justify;
+        font-family: "Times New Roman", Times, serif;
+        word-spacing: 5px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <ul class="navbar">
+          <li class="horizontal">
+            <a href="index.html" class="hover">HOME</a>
+          </li>
+          <li class="horizontal">
+            <a href="recipes.html" class="hover">RECIPES</a>
+          </li>
+          <li class="horizontal">
+            <a href="aboutme.html" class="hover">ABOUT</a>
+          </li>
+          <li class="horizontal">
+            <a href="contact-us.html" class="hover">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h1>Oyakodon</h1>
+    <div class="gridcontainer">
+      <div class="photo dataitem">
+        <img src="images/oyakodon.jpg" alt="oyakodon" title="oyakodon" />
+      </div>
+      <div class="desc1 dataitem">
+        <h2>Ingredients:</h2>
+        <ul class="tips">
+          <li>
+            Chicken thighs - I recommend thighs over breasts because fattier
+            thighs are more flavorful, tender, and forgiving (not like dry,
+            overcooked breasts).
+          </li>
+          <li>
+            Sake - Drizzling a tablespoon of sake over chicken helps remove its
+            gamey odor.
+          </li>
+          <li>Onion</li>
+          <li>Eggs</li>
+          <li>Dashi</li>
+          <li>togarashi</li>
+          <li>Rice</li>
+          <li>Green onions</li>
+        </ul>
+        <ol class="tips">
+          <li>
+            Prepare the ingredients: Cut the onion, mitsuba/green onions, and
+            chicken and crack the eggs.
+          </li>
+          <li>
+            Cook the onion in the seasoning mixture. Add the chicken and cook
+            until no longer pink.
+          </li>
+          <li>
+            Drizzle egg mixture at two separate times. Garnish green onions.
+          </li>
+          <li>
+            Spoon the finished dish over the bed of steamed rice in a donburi
+            bowl.
+          </li>
+        </ol>
+      </div>
+      <div class="desc dataitem">
+        <ul class="tips">
+          <h2>Tips</h2>
+          <li>
+            Use Good Japanese Soup Stock (Dashi) What makes this chicken and egg
+            rice bowl authentically Japanese? It is the flavor of dashi—Japanese
+            soup stock. If you are not familiar with dashi, think of this
+            ingredient as the most essential flavor of Japanese cuisine.
+          </li>
+          <li>
+            To achieve an ideal egg texture for delicious oyakodon, aim for egg
+            whites that are somewhat firm but still wobbly and egg yolks that
+            remain soft and runny. Since raw eggs are safe to consume in Japan,
+            oyakodon can look a bit different when it is served in Japan. Do not
+            be shocked if the eggs are a lot more on the runny and raw side
+            there. Add two-thirds of the eggs (ideally more egg whites because
+            they take longer time to cook than egg yolks) to the center of the
+            pan, avoiding the edges where eggs get overcooked. Add the remaining
+            one-third of the eggs (ideally more egg yolks) to the entire surface
+            of the pan.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

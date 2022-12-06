@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyudon</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: blanchedalmond;
+        overflow: hidden;
+      }
+
+      .horizontal {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: #ffc739;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #e9f495;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      .dataitem {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .photo {
+        grid-area: photo;
+      }
+
+      .desc {
+        grid-area: desc;
+      }
+
+      .desc1 {
+        grid-area: desc1;
+      }
+
+      .gridcontainer {
+        display: grid;
+        grid-template-areas:
+          "photo desc1"
+          "desc desc";
+        grid-template-columns: 40% 60%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .tips {
+        font-size: large;
+        text-align: justify;
+        font-family: "Times New Roman", Times, serif;
+        word-spacing: 5px;
+        line-height: 40px;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <ul class="navbar">
+          <li class="horizontal">
+            <a href="index.html" class="hover">HOME</a>
+          </li>
+          <li class="horizontal">
+            <a href="recipes.html" class="hover">RECIPES</a>
+          </li>
+          <li class="horizontal">
+            <a href="aboutme.html" class="hover">ABOUT</a>
+          </li>
+          <li class="horizontal">
+            <a href="contact-us.html" class="hover">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h1>Spicy Salmon Crispy Rice</h1>
+    <div class="gridcontainer">
+      <div class="photo dataitem">
+        <img
+          src="images/crispy-rice.jpg"
+          alt="crispy-rice"
+          title="crispy-rice"
+        />
+      </div>
+      <div class="desc1 dataitem">
+        <h2>Ingredients:</h2>
+        <ul class="tips">
+          <li>2 cups Sushi rice or Japanese short grain rice</li>
+          <li>2 cups Water</li>
+          <li>1 ½ teaspoon kosher salt</li>
+          <li>3 tablespoons sugar</li>
+          <li>3 tablespoons rice vinegar</li>
+          <li>Vegetable oil or canola oil</li>
+          <li class="bold">For spicy salmon</li>
+          <ol>
+            <li>1 pound sushi-grade salmon skin removed</li>
+            <li>2 tablespoons Kewpie Mayo</li>
+            <li>2 tablespoons sriracha</li>
+            <li>1 tablespoon soy sauce</li>
+            <li>1 teaspoon Sesame oil</li>
+            <li>1 tablespoon Sugar</li>
+            <li>1 stalk Green onions</li>
+            <li>1 Jalapeño(preference)</li>
+          </ol>
+        </ul>
+      </div>
+      <div class="desc dataitem">
+        <ol class="tips">
+          <h2>Steps</h2>
+          <li>
+            Make your spicy salmon mixture. Mince and chop your sushi-grade
+            salmon. Make your spicy mayo sauce (mix mayo, sriracha, soy sauce,
+            sesame oil, sugar and green onions) in a separate bowl. Pour over
+            your minced sushi-grade salmon. Mix well and set aside in the fridge
+            until ready to use.
+          </li>
+          <li>
+            Make your sushi rice. Take your sushi rice and rinse it well until
+            the water runs clear. Cook your rice according to the package
+            instructions over the stovetop, or in a rice cooker. In a bowl, make
+            your vinegar mixture by whisking salt, sugar and rice wine vinegar.
+            Pour over your cooked rice and fluff, mix until fully combined.
+          </li>
+          <li>
+            Freeze your rice! Transfer your warm or cool cooked sushi rice to a
+            sheet tray lined with plastic wrap or baking dish. Layer it on and
+            flatten it to even out. Top with more plastic wrap and freeze for 6
+            hours-overnight is best! You can also place the tray between ice as
+            well if you want to speed up the process.
+          </li>
+          <li>
+            Step 5: Fry your rice to make your crispy rice cakes Once frozen,
+            remove from plastic wrap and slice into your cube/circle or
+            rectangles for frying (up to your preference on size shape). Heat a
+            deep pot/skillet with oil until hot, hot to medium heat. Pan fry
+            your cubed rice until golden brown. Remove and let cool on paper
+            towels.
+          </li>
+          <li>Assemble</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

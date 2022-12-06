@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyudon</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: blanchedalmond;
+        overflow: hidden;
+      }
+
+      .horizontal {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: #ffc739;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #e9f495;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      .dataitem {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .photo {
+        grid-area: photo;
+      }
+
+      .desc {
+        grid-area: desc;
+      }
+
+      .desc1 {
+        grid-area: desc1;
+      }
+
+      .gridcontainer {
+        display: grid;
+        grid-template-areas:
+          "photo desc1"
+          "desc desc";
+        grid-template-columns: 40% 60%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .tips {
+        font-size: large;
+        text-align: justify;
+        font-family: "Times New Roman", Times, serif;
+        word-spacing: 5px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <ul class="navbar">
+          <li class="horizontal">
+            <a href="index.html" class="hover">HOME</a>
+          </li>
+          <li class="horizontal">
+            <a href="recipes.html" class="hover">RECIPES</a>
+          </li>
+          <li class="horizontal">
+            <a href="aboutme.html" class="hover">ABOUT</a>
+          </li>
+          <li class="horizontal">
+            <a href="contact-us.html" class="hover">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h1>Nasi Goreng</h1>
+    <div class="gridcontainer">
+      <div class="photo dataitem">
+        <img
+          src="images/nasigoreng.webp"
+          alt="nasi-goreng"
+          title="nasigoreng"
+        />
+      </div>
+      <div class="desc1 dataitem">
+        <h2>Ingredients:</h2>
+        <ul class="tips">
+          <li>
+            Sambal paste (Make sure you get the one with MSG, tastes better)
+          </li>
+          <li>Day old rice (kept in a fridge)</li>
+          <li>Kecap manis</li>
+          <li>Chicken</li>
+          <li>Shallots</li>
+          <li>Pork fat</li>
+          <li>2 eggs</li>
+          <li>1 Wok</li>
+          <li>Vegetable oil</li>
+          <li>Fried shallots</li>
+          <li>Prawn crackers</li>
+        </ul>
+        <ol class="tips">
+          <li>
+            Heat vegetable oil and swirl around wok to get wok-hay. Then, throw
+            away the oil and put ork fat into wok waiting for it to melt.
+          </li>
+          <li>
+            Afterwards, put sambal and chicken. Cook until chicken is cooked
+          </li>
+          <li>
+            After chicken is cooked, add shallots. Cook for 30 seconds and then
+            add day old rice and an egg and mix. After everything is mixed, add
+            kecap manis and mix again.
+          </li>
+          <li>When everything is mixed, take out of wok and put in a plate</li>
+          <li>
+            In another pan, fry an egg on high temp to get a crispy exterior and
+            runny yolk
+          </li>
+          <li>
+            Serve with fried egg on top, fried shallots and if you have prawn
+            crackers
+          </li>
+        </ol>
+      </div>
+      <div class="desc dataitem">
+        <ul class="tips">
+          <h2>Tips</h2>
+          <li>
+            Day old rice makes it so that the rice don't clump up together. Make
+            sure its at least a day old. Dont refigerate for more than a week!
+          </li>
+          <li>
+            MSG is a controversial ingredient. A lot of people think MSG is very
+            unhealthy and it is in very large amount of consumption. We are only
+            using a little, therefore it should be fine. If you are still
+            scared, substitute a sambal without MSG.
+          </li>
+          <li>
+            Pork fat is very hard to find. When I make nasi goreng, I usually
+            get some of these ingredients from my home country of Indonesia
+            itself, therefore if you can't get pork fat, using vegetable oil
+            itself is fine.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

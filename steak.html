@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyudon</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: blanchedalmond;
+        overflow: hidden;
+      }
+
+      .horizontal {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: #ffc739;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #e9f495;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      .dataitem {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .photo {
+        grid-area: photo;
+      }
+
+      .desc {
+        grid-area: desc;
+      }
+
+      .desc1 {
+        grid-area: desc1;
+      }
+
+      .gridcontainer {
+        display: grid;
+        grid-template-areas:
+          "photo desc1"
+          "desc desc";
+        grid-template-columns: 40% 60%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .tips {
+        font-size: large;
+        text-align: justify;
+        font-family: "Times New Roman", Times, serif;
+        word-spacing: 5px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <ul class="navbar">
+          <li class="horizontal">
+            <a href="index.html" class="hover">HOME</a>
+          </li>
+          <li class="horizontal">
+            <a href="recipes.html" class="hover">RECIPES</a>
+          </li>
+          <li class="horizontal">
+            <a href="aboutme.html" class="hover">ABOUT</a>
+          </li>
+          <li class="horizontal">
+            <a href="contact-us.html" class="hover">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h1>Steak</h1>
+    <div class="gridcontainer">
+      <div class="photo dataitem">
+        <img src="images/steak.jpg" alt="steak" title="steak" />
+      </div>
+      <div class="desc1 dataitem">
+        <h2>Ingredients:</h2>
+        <ul class="tips">
+          <li>1 ribeye</li>
+          <li>Parsley</li>
+          <li>3 cloves of garlic</li>
+          <li>Unsalted butter</li>
+          <li>Oil</li>
+          <li>Salt and Pepper</li>
+        </ul>
+        <ol class="tips">
+          <li>Season ribeye with salt and pepper on cutting board</li>
+          <li>
+            Leave it for 3 minutes. While resting put oil in pan and heat it
+            high heat.
+          </li>
+          <li>
+            Place steak into pan and push down. Flip each side for 5 minutes for
+            medium rare.
+          </li>
+          <li>
+            After each side for 5 minutes, turn the heat to medium-low and add
+            butter, parsley and garlic into the pan
+          </li>
+          <li>
+            When butter melts, use a spoon and pour the butter over the steak
+            multiple times for 4 minutes or until internal temp reaches 130°F
+          </li>
+          <li>
+            Rest the steak for 5 minutes and after that it is ready to be
+            served.
+          </li>
+        </ol>
+      </div>
+      <div class="desc dataitem">
+        <ul class="tips">
+          <h2>Tips</h2>
+          <li>
+            Basting and resting the steak makes sure all the juices stay inside
+            the steak so that the flavors are still there when eaten. Basting
+            also helps include the parsley and garlic flavor.
+          </li>
+          <li>
+            If you want steak other than medium rare, add 30 seconds for each
+            side for every tier cooked. For example, for medium cook each side
+            for 5 minutes and 30 seconds and baste for 4 minutes and 30 seconds.
+          </li>
+          <li>
+            If you are feeling more asian, you can cut the steak and add
+            japanese BBQ rice onto the steak and serve with rice.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

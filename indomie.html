@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyudon</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: blanchedalmond;
+        overflow: hidden;
+      }
+
+      .horizontal {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: #ffc739;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #e9f495;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      .dataitem {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .photo {
+        grid-area: photo;
+      }
+
+      .desc {
+        grid-area: desc;
+      }
+
+      .desc1 {
+        grid-area: desc1;
+      }
+
+      .gridcontainer {
+        display: grid;
+        grid-template-areas:
+          "photo desc1"
+          "desc desc";
+        grid-template-columns: 40% 60%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .tips {
+        font-size: large;
+        text-align: justify;
+        font-family: "Times New Roman", Times, serif;
+        word-spacing: 5px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <ul class="navbar">
+          <li class="horizontal">
+            <a href="index.html" class="hover">HOME</a>
+          </li>
+          <li class="horizontal">
+            <a href="recipes.html" class="hover">RECIPES</a>
+          </li>
+          <li class="horizontal">
+            <a href="aboutme.html" class="hover">ABOUT</a>
+          </li>
+          <li class="horizontal">
+            <a href="contact-us.html" class="hover">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h1>Indomie</h1>
+    <div class="gridcontainer">
+      <div class="photo dataitem">
+        <img src="images/indomie.webp" alt="indomie" title="indomie" />
+      </div>
+      <div class="desc1 dataitem">
+        <h2>Ingredients:</h2>
+        <ul class="tips">
+          <li>2 Indomie Packets (I feel one isnt enough)</li>
+          <li>1 egg</li>
+          <li>Kecap manis</li>
+          <li>Sambal ABC</li>
+          <li>Suseno</li>
+          <li>Fried shallots</li>
+          <li>Gochujang (preference)</li>
+        </ul>
+        <ol class="tips">
+          <li>
+            Cut packet and pour sauces into bowl. I would put extra kecap manis
+            and sambal abc for taste. When Im feeling extra brave, I like to add
+            gochujang to my indomie as well.
+          </li>
+          <li>
+            Cook the indomie noodles per packet instructions. However, I like my
+            noodles firm so I usually taste them before taking them out.
+          </li>
+          <li>
+            After noodles are cooked, dry and transfer into the bowl to mix it
+            with the sauce.
+          </li>
+          <li>
+            Fry an egg with oil on high temp to make it crispy but the yolk
+            runny at the same time.
+          </li>
+          <li>
+            Serve with fried egg and addtional toppings of fried shallots and
+            suseno on top.
+          </li>
+        </ol>
+      </div>
+      <div class="desc dataitem">
+        <ul class="tips">
+          <h2>Tips</h2>
+          <li>
+            You can add additional protein if you feel that the dish is lacking
+            in macronutrients. This is more of a midnight snack than a meal. I
+            recommend fried chicken or spam as good protein choices.
+          </li>
+          <li>
+            If you want the noodles firm and don't want to try it before taking
+            it out, cook the noodles 10-20 seconds earlier than packet
+            instructions.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

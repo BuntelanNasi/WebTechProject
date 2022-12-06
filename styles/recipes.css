@@ -29,10 +29,15 @@ p {
   padding: 0;
   background-color: blanchedalmond;
   overflow: hidden;
+  width: 100%;
 }
 
 .horizontal {
   float: left;
+}
+
+.width {
+  width: 400px;
 }
 
 li a {
@@ -45,4 +50,15 @@ li a {
 
 li a:hover {
   background-color: #e9f495;
+}
+
+@media screen and (max-width: 1000px) {
+  img {
+    width: 250px;
+  }
+}
+@media screen and (orientation: portrait) {
+  img {
+    width: 115px;
+  }
 }

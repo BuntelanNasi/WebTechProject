@@ -82,6 +82,8 @@ img {
   font-family: "Amatic SC", sans-serif"
 }
 
+
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -105,10 +107,26 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media screen and (max-width: 1000px) {
   .prev,
   .next,
   .text {
     font-size: 11px;
   }
+  .slideshow-container {
+    width: 505px;
+  }
+  .text {
+    font-size: 20px;
+    bottom: 150px;
+  }
+
 }
+
+@media screen and (orientation:portrait){
+  .text {
+    font-size: 20px;
+    bottom: 125px;
+  }
+}
+
