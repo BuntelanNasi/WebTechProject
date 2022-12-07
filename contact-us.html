@@ -64,7 +64,6 @@
               cols="50"
               rows="10"
             ></textarea>
-            <p id="placeholder">...</p>
           </div>
           <div>
             <button type="submit">Submit</button>
@@ -75,10 +74,7 @@
     </div>
     <script>
       function validate() {
-        const resultEl = document.getElementById("placeholder")
         if (document.myForm.username.value == "") {
-          resultEl.innerHTML = "Incorrect"
-          resultEl.style.
           alert("Please provide your name!");
           document.myForm.username.focus();
           return false;
