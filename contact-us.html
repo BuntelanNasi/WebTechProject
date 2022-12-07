@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles/contact-us.css" />
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon-32x32.png"/>
   </head>
   <body>
     <div>
@@ -28,7 +29,7 @@
     </div>
     <h1>Customer Feedback</h1>
     <div>
-      <form action="https://oim-apis.herokuapp.com/form" method="post">
+      <form action="" method="post" name="myForm">
         <fieldset>
           <legend class="bold space">Your Information:</legend>
           <div class="space">
@@ -63,6 +64,7 @@
               cols="50"
               rows="10"
             ></textarea>
+            <p id="placeholder">...</p>
           </div>
           <div>
             <button type="submit">Submit</button>
@@ -71,5 +73,46 @@
         </fieldset>
       </form>
     </div>
+    <script>
+      function validate() {
+        const resultEl = document.getElementById("placeholder")
+        if (document.myForm.username.value == "") {
+          resultEl.innerHTML = "Incorrect"
+          resultEl.style.
+          alert("Please provide your name!");
+          document.myForm.username.focus();
+          return false;
+        }
+        if (document.myForm.email.value == "") {
+          alert("Please provide your Email!");
+          document.myForm.email.focus();
+          return false;
+        }
+        if (document.myForm.comments.value == "") {
+          alert("Please provide a comment");
+          document.myForm.comments.focus();
+          return false;
+        }
+        return true;
+      }
+
+      function validateEmail() {
+        const emailID = document.myForm.email.value;
+        const atpos = emailID.indexOf("@");
+        const dotpos = emailID.lastIndexOf(".");
+
+        if (atpos < 1 || dotpos - atpos < 2) {
+          alert("Please enter correct email ID");
+          document.myForm.email.focus();
+          return false;
+        }
+        return true;
+      }
+
+      document.querySelector("form").onsubmit = function () {
+        validateEmail(), validate();
+      };
+    </script>
+    <a href="sitemap.html">Sitemap</a>
   </body>
 </html>

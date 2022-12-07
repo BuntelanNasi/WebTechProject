@@ -10,7 +10,7 @@
   display: grid;
   grid-template-areas:
     "photo desc1";
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 70%;
   margin-left: auto;
   margin-right: auto;
   width: auto;
@@ -23,7 +23,7 @@
   justify-content: center;
 }
 
-.makan {
+#makan {
   font-weight: bold;
 }
 
@@ -36,7 +36,7 @@ p {
 }
 
 img {
-  width: 60%;
+  width: 90%;
 }
 
 h1 {

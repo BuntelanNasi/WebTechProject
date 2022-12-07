@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyudon</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon-32x32.png"/>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: blanchedalmond;
+        overflow: hidden;
+      }
+
+      .horizontal {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: #ffc739;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #e9f495;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      .dataitem {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .photo {
+        grid-area: photo;
+      }
+
+      .desc {
+        grid-area: desc;
+      }
+
+      .desc1 {
+        grid-area: desc1;
+      }
+
+      .gridcontainer {
+        display: grid;
+        grid-template-areas:
+          "photo desc1"
+          "desc desc";
+        grid-template-columns: 40% 60%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .tips {
+        font-size: large;
+        text-align: justify;
+        font-family: "Times New Roman", Times, serif;
+        word-spacing: 5px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <ul class="navbar">
+          <li class="horizontal">
+            <a href="index.html" class="hover">HOME</a>
+          </li>
+          <li class="horizontal">
+            <a href="recipes.html" class="hover">RECIPES</a>
+          </li>
+          <li class="horizontal">
+            <a href="aboutme.html" class="hover">ABOUT</a>
+          </li>
+          <li class="horizontal">
+            <a href="contact-us.html" class="hover">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h1>Chirashi don</h1>
+    <div class="gridcontainer">
+      <div class="photo dataitem">
+        <img
+          src="images/chirashidon.webp"
+          alt="chirashidon"
+          title="chirashidon"
+        />
+      </div>
+      <div class="desc1 dataitem">
+        <h2>Ingredients:</h2>
+        <ul class="tips">
+          <li>2 cups Sushi rice or Japanese short grain rice</li>
+          <li>2 cups Water</li>
+          <li>1 ½ teaspoon kosher salt</li>
+          <li>3 tablespoons sugar</li>
+          <li>3 tablespoons rice vinegar</li>
+          <li>Vegetable oil or canola oil</li>
+          <li>Sashimi grade fish/seafood of your choice</li>
+        </ul>
+        <ol class="tips">
+          <li>
+            Make your sushi rice. Take your sushi rice and rinse it well until
+            the water runs clear.
+          </li>
+          <li>
+            Cook your rice according to the package instructions over the
+            stovetop, or in a rice cooker.
+          </li>
+          <li>
+            In a bowl, make your vinegar mixture by whisking salt, sugar and
+            rice wine vinegar. Pour over your cooked rice and fluff, mix until
+            fully combined.
+          </li>
+          <li>
+            Put sushi rice in a bowl and assemble the chirashi don by adding
+            sashimi on the rice
+          </li>
+        </ol>
+      </div>
+      <div class="desc dataitem">
+        <ul class="tips">
+          <h2>Tips</h2>
+          <li>
+            Make sure to add a variety of sashimi for the chirashi don. So that
+            there are different tastes and flavors each bite.
+          </li>
+          <li>
+            My favorite sashimi/seafood for the chirashidon would be uni,
+            salmon, tuna and tamago. There are different sashimi out there so
+            dont be scared to try different combinations
+          </li>
+          <li>Not a tip, but a sushi party is the new kind of party.</li>
+        </ul>
+      </div>
+    </div>
+    <a href="sitemap.html">Sitemap</a>
+  </body>
+</html>

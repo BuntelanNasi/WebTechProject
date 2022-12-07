@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sitemap</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon-32x32.png"/>
     <style>
       .navbar {
         list-style-type: none;
@@ -38,17 +39,27 @@
         grid-area: list2;
       }
 
+      .list3 {
+        grid-area: list3;
+      }
+
+      .list4 {
+        grid-area: list4;
+      }
+
       .gridcontainer {
         display: grid;
-        grid-template-areas: "list1 list2";
-        grid-template-columns: 50% 50%;
+        grid-template-areas:
+          "list1 list2"
+          "list3 list4";
+        grid-template-columns: 25% 25% 25% 25%;
         margin-left: auto;
         margin-right: auto;
         width: auto;
         font-family: Arial, Helvetica, sans-serif;
       }
 
-      p{
+      p {
         text-align: center;
       }
     </style>
@@ -94,6 +105,24 @@
           <li><a href="nigiri.html">Nigiri</a></li>
           <li><a href="oyakodon.html">Oyako don</a></li>
           <li><a href="steak.html">Steak</a></li>
+        </ul>
+      </div>
+      <div class="list3">
+        <p>Website Domain</p>
+        <ul>
+          <li>
+            <a href="https://www.makanbareng.me">https://www.makanbareng.me</a>
+          </li>
+        </ul>
+      </div>
+      <div class="list4">
+        <p>Github url</p>
+        <ul>
+          <li>
+            <a href="https://github.com/BuntelanNasi/WebTechProject"
+              >https://github.com/BuntelanNasi/WebTechProject</a
+            >
+          </li>
         </ul>
       </div>
     </div>

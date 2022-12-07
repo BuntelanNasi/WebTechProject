@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyudon</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon-32x32.png"/>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: blanchedalmond;
+        overflow: hidden;
+      }
+
+      .horizontal {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: #ffc739;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #e9f495;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      .dataitem {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .photo {
+        grid-area: photo;
+      }
+
+      .desc {
+        grid-area: desc;
+      }
+
+      .desc1 {
+        grid-area: desc1;
+      }
+
+      .gridcontainer {
+        display: grid;
+        grid-template-areas:
+          "photo desc1"
+          "desc desc";
+        grid-template-columns: 40% 60%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .tips {
+        font-size: large;
+        text-align: justify;
+        font-family: "Times New Roman", Times, serif;
+        word-spacing: 5px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <ul class="navbar">
+          <li class="horizontal">
+            <a href="index.html" class="hover">HOME</a>
+          </li>
+          <li class="horizontal">
+            <a href="recipes.html" class="hover">RECIPES</a>
+          </li>
+          <li class="horizontal">
+            <a href="aboutme.html" class="hover">ABOUT</a>
+          </li>
+          <li class="horizontal">
+            <a href="contact-us.html" class="hover">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h1>Spaghetti Bolognese</h1>
+    <div class="gridcontainer">
+      <div class="photo dataitem">
+        <img src="images/bolognese.webp" alt="bolognese" title="bolognese" />
+      </div>
+      <div class="desc1 dataitem">
+        <h2>Ingredients:</h2>
+        <ul class="tips">
+          <li>Tomato base</li>
+          <li>Ground beef</li>
+          <li>
+            Onion: Sliced onions give sweetness to the dish and are a perfect
+            pair with tender beef.
+          </li>
+          <li>Sugar</li>
+          <li>Spaghetti</li>
+          <li>Water</li>
+          <li>Salt</li>
+          <li>Cheese</li>
+          <li>Parsley</li>
+        </ul>
+        <ol class="tips">
+          <li>Cut the onion, green onions, and tear apart beef.</li>
+          <li>
+            Cook Spaghetti in a pan with water per the packet instructions or
+            until al-dente. Add salt to the water, make it as salty as the sea
+          </li>
+          <li>
+            When spaghetti is cooked, dry the spaghetti, but reserve some pasta
+            water for the sauce
+          </li>
+          <li>
+            Make the sauce by heating oil and cook the onions with the beef.
+            After you smell the onions and the beef are done, add the tomato
+            base and add the pasta water to the sauce. Make sure the sauce is
+            not thick or runny at the same time.
+          </li>
+          <li>Add spaghetti back into the pan and mix.</li>
+          <li>Serve in a plate and garnsih with cheese and parsley</li>
+        </ol>
+      </div>
+      <div class="desc dataitem">
+        <ul class="tips">
+          <h2>Tips</h2>
+          <li>
+            Make sure to get good quality pasta. You can usually see the grains
+            or bumps on the pasta if they are good quality
+          </li>
+          <li>
+            Use good quality beef. Well-marbled beef will never become chewy
+            after being simmered in the sauce. For well-marbled beef, it's
+            easier to flash freeze and cut the semi-frozen meat.
+          </li>
+          <li>
+            The pasta water is a tip you should use in every pasta dish, it
+            makes use of the excess starch and makes the sauce less thick.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="sitemap.html">Sitemap</a>
+  </body>
+</html>
